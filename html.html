@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="iniial-part">
+        <h1 id="title">Free Code Survey Form</h1>
+        <p id="description">Thank you for taking out your precious time</p>
+      </div>
+      <form action="#" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name here" />
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email here" />
+        <label for="number" id="number-label">Age</label>
+        <input
+          type="number"
+          id="number"
+          min="10"
+          max="99"
+          placeholder="Enter your age"
+        />
+        <label for="dropdown"
+          >Which option best describe your current role</label
+        >
+        <select name="role" id="dropdown">
+          <option value="student">Student</option>
+          <option value="professor">Professor</option>
+          <option value="HoD">HoD</option>
+        </select>
+
+        <div class="radio-box-field">
+          <p class="radio-text">
+            Would you recommend a Microverse to your friend
+          </p>
+          <input type="radio" id="yes" name="recommendation" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="recommendation" id="no" />
+          <label for="no">No</label>
+          <input type="radio" name="recommend" id="may-be" />
+          <label for="may-be">May-be</label>
+        </div>
+
+        <div class="check-box-field">
+          <p>Which part you like most about Microverse</p>
+          <label for="check">
+            <input type="checkbox" name="prefer" id="pair-programming" />
+            Pair Programming
+          </label>
+          <label for="check">
+            <input type="checkbox" name="prefer" id="10-hours-learning" />
+            10 hours of learning a day
+          </label>
+          <label for="check">
+            <input type="checkbox" name="prefer" id="10-month-bootcamp" />
+            10 Months Bootcamp
+          </label>
+        </div>
+        <div class="textarea-box-field">
+          <p>Any comment or suggestion</p>
+          <textarea
+            name="text"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here"
+          ></textarea>
+        </div>
+
+        <button id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
+
+
